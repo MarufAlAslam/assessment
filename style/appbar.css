@@ -1,0 +1,174 @@
+/* universal css section */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* reusable css */
+.font-14{
+    font-size: 14px !important;
+    color: gray !important;
+}
+.font-16{
+    font-size: 16px !important;
+}
+.font-20{
+    font-size: 20px;
+    font-weight: 600;
+}
+.font-36{
+    font-size: 36px;
+    font-weight: 600;
+}
+.font-60{
+    font-size: 60px !important;
+    font-weight: 600;
+}
+
+
+/* navbar section */
+.myNavBar{
+    padding-top:30px ;
+}
+.myNavBar ul li a:hover{
+    border-bottom: 2px solid #2500f9;
+    color: white;
+    text-decoration: none;
+   }
+
+.btn-primary{
+    background-color: #2500f9 !important;
+}
+
+/* banner section */
+.banner{
+    padding-top: 250px;
+    padding-bottom: 150px ;
+}
+
+.banner a:hover{
+ background-color: #2500f9 !important;
+ color: white;
+ text-decoration: none;
+}
+.box{
+    position: relative;
+}
+.phone-img{
+    width: 360px;
+    position: absolute;
+    right: 30px;
+    top: -230px;
+    z-index: 1;
+}
+.banner-img{
+    position: absolute;
+    bottom: -215px;
+}
+
+/* clients section */
+.clients{
+    padding: 150px 0;
+}
+
+
+/* description section */
+
+.desc-title{
+    font-weight: 600;
+}
+.margin{
+    margin-top: 95px;
+    padding-left: 50px;
+}
+
+
+/* option section */
+.option{
+    padding: 100px 0;
+}
+
+/* bigfooter section */
+.bigfooter{
+    background-color: #09142e;
+    padding: 115px 0;
+}
+.text-custom{
+    color: #848a97 !important;
+    }
+.social{
+    padding: -0.5rem !important;
+}
+
+.bigfooter ul li :hover{
+    color: white;
+}
+
+/* media section */
+
+/* +++++ large devices +++++ */
+@media screen and (max-width:1200px){
+    .phone-img{
+        width: 280px !important;
+        right: 35px;
+    }
+    .banner-img{
+        bottom: -215px;
+    }
+}
+
+/* +++++ medium devices +++++ */
+@media screen and (max-width:992px){
+    .myNavBar ul li:nth-child(2){
+        display: none;
+    }
+    .banner{
+        text-align: center;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/applab_phone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        color: white;
+    }
+    /* .text-muted{
+        color: white !important;
+    } */
+    .center{
+        margin-left: 0 !important;
+    }
+
+    .phone-img{
+        display: none;
+    }
+    .banner-img{
+        display: none;
+    }
+    .margin h1{
+        font-size: 30px !important;
+    }
+    .margin p{
+        font-size: 12px !important;
+    }
+    .margin{
+        margin-top: 10px;
+    }
+}
+
+/* small devices */
+@media screen and (max-width:768px){
+    .myNavBar ul li:nth-child(2){
+        display: inline;
+    }
+    .myNavBar ul li a{
+        margin-right: 0 !important;
+    }
+    .margin{
+        text-align: center;
+        margin-top: 25px;
+    }
+    .margin h1{
+        font-size: 40px !important;
+    }
+    .margin p{
+        font-size: 15px !important;
+    }
+}
